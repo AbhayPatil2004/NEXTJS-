@@ -1,14 +1,18 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+export const metadata = {
+    title : "My app"
+    
+}
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body >
-        <header></header>
+        <header>Header</header>
         {children}
-        <footer></footer>
+        <footer>Footer</footer>
       </body>
     </html>
   );

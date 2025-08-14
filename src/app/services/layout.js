@@ -1,3 +1,8 @@
+export const metadata = {
+    title : "My app"
+    
+}
+
 export default function servicesLayout({children}){
     return (
         <div>
