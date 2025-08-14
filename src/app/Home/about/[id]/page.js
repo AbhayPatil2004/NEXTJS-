@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 
 
 export default async function About({ params , searchParams}){
@@ -6,9 +7,12 @@ export default async function About({ params , searchParams}){
     console.log(id)
     console.log( searchParams.name , searchParams.age );
     
+    if( !Number(id) ){
+        notFound();
+    }
     return(
         <div>
-            Hello Params { searchParams.name} {searchParams.age }
+            Hello Params { id}
         </div>
     )
 }
