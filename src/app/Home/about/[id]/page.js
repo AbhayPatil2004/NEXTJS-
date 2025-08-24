@@ -13,6 +13,7 @@ export default async function About({ params , searchParams}){
     return(
         <div>
             Hello Params { id}
+            { id == "123" ? "Hello World" : "lkdjfkljzdfk"}
         </div>
     )
 }
