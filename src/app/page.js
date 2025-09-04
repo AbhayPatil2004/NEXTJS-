@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import { useTheme } from "@/context/themeProvider";
 import error from "./error";
 import { useState } from "react";
+import style from "../style.css"
 
 export default function Home() {
 
@@ -14,7 +15,7 @@ export default function Home() {
   <div>
     Home Page {name}
     <button
-      onClick={setFruits(null)}
+      
     >
       Click
     </button>
